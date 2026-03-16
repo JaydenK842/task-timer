@@ -1,8 +1,13 @@
 <script>
+	import TaskList from "$lib/TaskList.svelte";
+	import Timer from "$lib/Timer.svelte";
 
+	var tasks = ["Task 1", "Task 2", "Task 3"]
+	var timer = 2930948
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit
-	<a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation
-</p>
+<!-- Task List -->
+<div class="flex flex-row">
+	<Timer {timer}></Timer>
+	<TaskList {tasks}></TaskList>
+</div>

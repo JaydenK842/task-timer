@@ -51,7 +51,7 @@
 
 </script>
 
-<div>
+<div class="flex flex-col">
 	<h1>{ms_to_hr(timer)}:{ms_to_min(timer)}:{ms_to_sec(timer)}</h1>
 	
   <button onclick={toggle_pause}>
